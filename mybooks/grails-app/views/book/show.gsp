@@ -50,24 +50,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${bookInstance?.isbn10}">
-				<li class="fieldcontain">
-					<span id="isbn10-label" class="property-label"><g:message code="book.isbn10.label" default="Isbn10" /></span>
-					
-						<span class="property-value" aria-labelledby="isbn10-label"><g:fieldValue bean="${bookInstance}" field="isbn10"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${bookInstance?.isbn13}">
-				<li class="fieldcontain">
-					<span id="isbn13-label" class="property-label"><g:message code="book.isbn13.label" default="Isbn13" /></span>
-					
-						<span class="property-value" aria-labelledby="isbn13-label"><g:fieldValue bean="${bookInstance}" field="isbn13"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${bookInstance?.newestCopyrightYear}">
 				<li class="fieldcontain">
 					<span id="newestCopyrightYear-label" class="property-label"><g:message code="book.newestCopyrightYear.label" default="Newest Copyright Year" /></span>
@@ -82,6 +64,24 @@
 					<span id="copyright-label" class="property-label"><g:message code="book.copyright.label" default="Copyright" /></span>
 					
 						<span class="property-value" aria-labelledby="copyright-label"><g:fieldValue bean="${bookInstance}" field="copyright"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${bookInstance?.isbn10}">
+				<li class="fieldcontain">
+					<span id="isbn10-label" class="property-label"><g:message code="book.isbn10.label" default="Isbn10" /></span>
+					
+						<span class="property-value" aria-labelledby="isbn10-label"><g:fieldValue bean="${bookInstance}" field="isbn10"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${bookInstance?.isbn13}">
+				<li class="fieldcontain">
+					<span id="isbn13-label" class="property-label"><g:message code="book.isbn13.label" default="Isbn13" /></span>
+					
+						<span class="property-value" aria-labelledby="isbn13-label"><g:fieldValue bean="${bookInstance}" field="isbn13"/></span>
 					
 				</li>
 				</g:if>

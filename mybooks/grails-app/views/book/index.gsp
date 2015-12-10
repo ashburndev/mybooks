@@ -30,11 +30,11 @@
 					
 						<g:sortableColumn property="publisher" title="${message(code: 'book.publisher.label', default: 'Publisher')}" />
 					
-						<g:sortableColumn property="isbn10" title="${message(code: 'book.isbn10.label', default: 'Isbn10')}" />
-					
-						<g:sortableColumn property="isbn13" title="${message(code: 'book.isbn13.label', default: 'Isbn13')}" />
-					
 						<g:sortableColumn property="newestCopyrightYear" title="${message(code: 'book.newestCopyrightYear.label', default: 'Newest Copyright Year')}" />
+					
+						<g:sortableColumn property="copyright" title="${message(code: 'book.copyright.label', default: 'Copyright')}" />
+					
+						<g:sortableColumn property="isbn10" title="${message(code: 'book.isbn10.label', default: 'Isbn10')}" />
 					
 					</tr>
 				</thead>
@@ -48,11 +48,11 @@
 					
 						<td>${fieldValue(bean: bookInstance, field: "publisher")}</td>
 					
-						<td>${fieldValue(bean: bookInstance, field: "isbn10")}</td>
-					
-						<td>${fieldValue(bean: bookInstance, field: "isbn13")}</td>
-					
 						<td>${fieldValue(bean: bookInstance, field: "newestCopyrightYear")}</td>
+					
+						<td>${fieldValue(bean: bookInstance, field: "copyright")}</td>
+					
+						<td>${fieldValue(bean: bookInstance, field: "isbn10")}</td>
 					
 					</tr>
 				</g:each>
